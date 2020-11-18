@@ -1,2 +1,3 @@
-# Binary-Calculator
+# Binary Calculator
 Designing with Code | Binary Calculator
+A console App that calculatees with binary numbers
