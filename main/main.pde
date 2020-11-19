@@ -1,15 +1,7 @@
-import java.util.Scanner;
-
-
-//MAIN
-
 void setup(){
     
-    //VALUES
+    int BITSIZE = 16;
     
-    int BITSIZE = 4;
-    
-    boolean[][] empty = new boolean[6][BITSIZE];
     boolean[][] numbers = new boolean[6][BITSIZE];
     boolean[] add = new boolean[BITSIZE];
     boolean[] sub = new boolean[BITSIZE];
@@ -18,11 +10,13 @@ void setup(){
     
     startMessage();
     
+    numbers = fillRandomValues(numbers);
     
-    //START CALC
-    numbers = defineValues(empty);
     printAllNumbers(numbers);
     
+    /*
+     * Calculate the sum and then send a message of type "sum".
+     */
     add = add(numbers[0], numbers[1]);
     message("a", numbers[0], numbers[1], add);
 }
